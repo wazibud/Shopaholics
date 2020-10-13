@@ -1,6 +1,6 @@
 var request = new XMLHttpRequest();
 
-request.open('GET','https://api2.shop.com/AffiliatePublisherNetwork/v2/products?publisherId=TEST&locale=en_US&site=shop&shipCountry=US&perPage=15&onlyMaProducts=false', true, 'api_Key:0a19dbf48f984da59d96e900d5e06228');
+request.open('GET','https://api2.shop.com/AffiliatePublisherNetwork/v2/products?publisherId=TEST&locale=en_US&site=shop&shipCountry=US&perPage=15&onlyMaProducts=false', true, 'api_Key:');
 
 const x = document.getElementById('root');
 request.onload = function () {
