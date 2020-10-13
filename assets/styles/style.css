@@ -84,6 +84,9 @@ body {
         padding: 15px;
         margin: 10px;
     }
+    .sh-content-section-products p {
+        width: 150px;
+    }
 
 
 .sh-content-section-articles {
