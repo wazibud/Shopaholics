@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +15,6 @@
 </head>
 <body>
 
-    <div class="header">
         <div class="container">
             <div class="navigation">
                 <div class="logo">
@@ -41,41 +39,21 @@
                     <div class="bar-3"></div>
                 </div>
             </div>
-            <div class="row">
-                <div class="column-1">
-                    <h1> For All Your Shopping Needs! <br> Browse Our Selection! </h1>
-                    <p> Clothing fit for any occassion! From indoor, outdoor, loungewear, casual, and business we have it all! <br> From name brands you trust, you can count on us to sweeten the deal! </p>
-                    <a href="ProductPage.html" class="displaybutton"> Shop &#10148; </a>
-                </div>
-                <div class="column-2">
-                    <img src="images/adidas_model1.jpeg">
-                </div>
-            </div>
         </div>
-    </div>
-
-<!--- Categories --->
-
-    <div class="categories">
-        <div class="categories-cont">
-            <div class="row">
-                <div class="column-3">
-                    <img src="images/category1.jpeg">
-                </div>
-                <div class="column-3">
-                    <img src="images/category2.jpeg">
-                </div>
-                <div class="column-3">
-                    <img src="images/category3.jpeg">
-                </div> 
-            </div>
-        </div>
-    </div>
-
-<!--- Products --->
 
     <div class="products-cont">
-        <h2 class="title"> Trending Products </h2>
+
+        <div class="row row-2">
+            <h2> All Products </h2>
+            <select>
+                <option> - </option>
+                <option> Sort by Price </option>
+                <option> Sort by Popularity </option>
+                <option> Sort by Rating </option>
+                <option> Sort by Sale </option>
+            </select>
+        </div>
+
         <div class="row">
             <div class="column-4">
                 <img src="images/product1_1.jpeg" onclick="prod_det_1(this)" target="_self">
@@ -126,7 +104,6 @@
                 <p> $600.00 </p>
             </div>
         </div>
-        <h2 class="title"> Products </h2>
         <div class="row">
         <div class="column-4">
                 <img src="images/product5_1.jpeg">
@@ -225,75 +202,14 @@
                 <p> $530.00 </p>
             </div>
         </div>
-    </div>
 
-<!--- Articles --->
-
-    <div class="article">
-        <div class="article-cont">
-            <div class="row">
-                <div class="column-5">
-                    <img src="images/Man_in_suit.jpeg" class="article-img" height="500px" width="300px">
-                </div>
-                <div class="column-5">
-                    <h1> The Latest In Fashion! </h1>
-                        <div class="column-6">
-                             <img src="images/people.com.png" class="column-6-img" height="76px" width="88px" align="left">
-                             <p> Get the latest fashion news and features from PEOPLE.com, including breaking news about celebrity-approved trends, brands and sale updates...</p>
-                             <a href="https://people.com/fashion/" class="column-6-btn"> Read More &#10148; </a>
-                        </div>
-                        <div class="column-6">
-                             <img src="images/nytimes.com.png" class="column-6-img" height="76px" width="88px" align="left">
-                             <p> Live news, investigations, opinion, photos and video by the journalists of The New York Times from more than 150 countries around the world...</p>
-                             <a href="https://www.nytimes.com/section/fashion" class="column-6-btn"> Read More &#10148; </a>
-                        </div>
-                        <div class="column-6">
-                             <img src="images/vogue.com.png" class="column-6-img" height="76px" width="88px" align="left">
-                             <p> The latest fashion news, beauty coverage, celebrity style, fashion week updates, culture reviews, and videos on Vogue.com...</p>
-                             <a href="https://www.vogue.com/fashion" class="column-6-btn"> Read More &#10148; </a>
-                        </div>
-                </div>
-            </div>
+        <div class="product-page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
         </div>
-    </div>
-
-<!--- Countdown for Special --->
-
-    <div class="CountDown-cont">
-        <div id="CountDown"></div>
-        <h2><b> Hurry Before Our Special Runs Out! </b></h2>
-        <a href="Go Now" class="count-btn"> Go Now &#10148; </a>
-    </div>
-        
-
-<!--- Brands Names --->
-
-    <div class="brand-names">
-        <div class="brand-names-cont">
-            <div class="row">
-                <div class="column-7">
-                    <img src="images/adidas.png" width="150px" height="100px">
-                </div>
-                <div class="column-7">
-                    <img src="images/levis.jpeg" width="150px" height="100px">
-                </div>
-                <div class="column-7">
-                    <img src="images/tommy-hilfiger.png" width="150px" height="100px">
-                </div>
-                <div class="column-7">
-                    <img src="images/nike.jpeg" width="80px" height="100px">
-                </div>
-                <div class="column-7">
-                    <img src="images/maison-margiela.jpeg" width="80px" height="100px">
-                </div>
-            </div>
-        </div>
-    </div>
-
-<!--- Clock --->
-
-    <div class="clock-cont">
-        <div id="clock"></div>
     </div>
 
 <!--- Page Footer --->
@@ -339,18 +255,17 @@
         window.open("index.html", "_self");
     }
 
-    function cart_1() {
+    function cart_1(x) {
         window.open("Cart.html", "_self");
     }
 
     function myPointer(x) {
-    x.classList.toggle("change");
+        x.classList.toggle("change");
     }
 
-    function prod_det_1() {
+    function prod_det_1(x) {
         window.open("ProductDetails.html", "_self");
     }
-
 
     var Menu_popup = document.getElementById("Menu_popup");
 
@@ -363,73 +278,6 @@
         else {
             Menu_popup.style.maxHeight = "0px";
         }
-    }
-
-/* SPECIAL COUNTDOWN USER CLOCK BELOW! TIME IS ONLY SET FOR CST BUT WORKS! */
-
-    const tStop = new Date("December 15, 2020 21:18:00").getTime(); 
-
-
-    var timerId = setInterval(function cClock() {
-        const currentT = new Date().getTime();
-        const tLeft = tStop - currentT;
-        const d = Math.floor(tLeft / (1000*60*60*24));
-        let hr = Math.floor((tLeft % (1000*60*60*24)) / (1000*60*60));
-        let min = Math.floor((tLeft % (1000*60*60)) / (1000*60));
-        let sec = Math.floor((tLeft % (1000*60)) / 1000);
-        
-        if (d <= 0 && hr <= 0 && min <= 0 && sec <= 0) { 
-            document.getElementById('CountDown').innerHTML = "Times Up!";
-            clearInterval(timerId);
-            return;
-        }
-        
-        if (hr < 10) {
-            hr = '0' + hr;
-        }
-        if (min < 10) {
-            min = '0' + min;
-        }
-        if (sec < 10) {
-            sec = '0' + sec;
-        }
-        
-        document.getElementById('CountDown').innerHTML = d + ':' + hr + ':' + min + ':' + sec;
-    
-    }, 500);
-
-/* AM is wrong for 12 in the afternoon work on it so it displays correct en! */
-/* USER CLOCK BELOW Brand-Names */
-
-    setInterval(sClock, 500);
-    function sClock() {
-        var t = new Date();
-        var hr = t.getHours();
-        var min = t.getMinutes();
-        var sec = t.getSeconds();
-        var en = 'AM';
-
-        if (hr > 12) {
-            en = 'PM';
-        }
-        if (hr > 12) {
-            hr = hr - 12;
-        }
-        if (hr == 0) {
-            hr = 12;
-        }
-        if (hr < 10) {
-            hr = '0' + hr;
-        }
-        if (min < 10) {
-            min = '0' + min;
-        }
-        if (sec < 10) {
-            sec = '0' + sec;
-        }
-
-        document.getElementById('clock').innerHTML = hr + ':' + min + ':' + sec + ' ' + en;
-
     }
 
 </script>
