@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopaholics</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet"/>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    
+</head>
+<body>
+
+        <div class="container">
+            <div class="navigation">
+                <div class="logo">
+                    <img src="images/logo.png" width="125px" onclick="logo_1(this)" target="_self">
+                </div>
+                <nav>
+                    <ul id="Menu_popup">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ProductPage.html">Products</a></li>
+                        <li><a href="About">About</a></li>
+                        <li><a href="Contact">Contact</a></li>
+                        <li><a href="Your Account">Your Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart1.jpeg" width="30px" height="30px" onclick="cart_1(this)" target="_self">
+            
+            <!--- Animated menu scroll down ---> 
+
+                <div class="menu-bar" onclick="myPointer(this); toggle_a();">
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
+                </div>
+            </div>
+        </div>
+
+<!--- Product Details --->
+
+        <div class="product-detail-cont">
+            <div class="row">
+                <div class="column-2">
+                    <img src="images/product1_1.jpeg" width="70%" id="product_Detail_Img">
+                    <div class="img-row">
+                        <div class="img-row-column-2">
+                            <img src="images/product1_1.jpeg" width="100%" id="img1" onclick="change(product_Detail_Img,id);">
+                        </div>
+                        <div class="img-row-column-2">
+                            <img src="images/product1_2.jpeg" width="100%" id="img2" onclick="change(product_Detail_Img,id);">
+                        </div>
+                        <div class="img-row-column-2">
+                            <img src="images/product1_3.jpeg" width="100%" id="img3" onclick="change(product_Detail_Img,id);">
+                        </div>
+                        <div class="img-row-column-2">
+                            <img src="images/product1_4.jpeg" width="100%" id="img4" onclick="change(product_Detail_Img,id);">
+                        </div>
+                    </div>
+                </div>
+                <div class="column-2">
+                    <p> Jersey / T-Shirt </p>
+                    <h1> Adidas Red Jersey </h1>
+                    <h4> $29.00 </h4>
+                    <select>
+                        <option> Select Size </option>
+                        <option> S </option>
+                        <option> M </option>
+                        <option> L </option>
+                        <option> XL </option>
+                        <option> XXL </option>
+                    </select>
+                    <input type="number" value="1">
+                    <a href="Cart.html" class="btn"> Add To Cart </a>
+                    <h3> Product Details <i class="fa fa-indent"></i></h3>
+                    <br></br>   
+                    <p> Moisture- and temperature-management technologies in adidas shirts offer peak performance in your workout while soft fabrics keep you comfortable and showing your love for sport on days off. </p>
+                </div>
+            </div>
+        </div>
+    
+    <div class="products-cont">
+        <div class="row row-2">
+            <h2> Related Products </h2>
+            <p> View More </p>
+        </div>
+    </div>
+
+    <div class="products-cont">
+        <div class="row">
+            <div class="column-4">
+                <img src="images/product9_1.jpeg">
+                <h4> Marni Midi Skirt </h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p><del> $480.00 </del> &nbsp; $393.00 </p>
+            </div>
+            <div class="column-4">
+                <img src="images/product10_1.jpeg">
+                <h4> Chloe Coat </h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p> $1,600.00 </p>
+            </div>
+            <div class="column-4">
+                <img src="images/product11_1.jpeg">
+                <h4> Givenchy Pump </h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p> $540.00 </p>
+            </div>
+            <div class="column-4">
+                <img src="images/product12_1.jpeg">
+                <h4> Roberto Cavalli Short Dress </h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p> $530.00 </p>
+            </div>
+        </div>
+    </div>
+
+<!--- Page Footer --->
+
+    <div class="footer">
+        <div class="footer-cont">
+            <div class="row">
+               <div class="f-column-8-1">
+                   <h3> Access Our Website on Your Phone! </h3>
+                   <p> Our Webpage Supports Both Current Versions of Android and IOS! </p>
+                </div>
+                <div class="f-column-8-2">
+                   <img src="images/logo.png" width="120px" height="120px" align="left">
+                   <p> We Hope That Our Website Provides The User A Wonderful Browsing Experience <br> Connecting The Customer to Their Favorite Brands and to The Fashion World! </br> </p>
+                </div> 
+                <div class="f-column-8-3">
+                   <h3> Other Useful Links </h3>
+                        <ul>
+                            <li> Coupons </li>
+                            <li> Fashion Sites </li>
+                            <li> Purchases and Returns </li>
+                            <li> Subscribe to Our Mailing List </li>
+                            <li> Referrals </li>
+                        </ul>
+                </div>  
+                <div class="f-column-8-4">
+                   <h3> Follow Us on Other Platforms! </h3>
+                        <ul>
+                            <li> Instagram </li>
+                            <li> Facebook </li>
+                            <li> Twitter </li>
+                        </ul>
+                </div>
+            </div>
+            <hr></hr>
+            <p class="footer-copyright"> Shopaholics &copy; all right reserved 2020 </p>
+        </div>
+    </div>
+
+<script>
+
+    function logo_1() {
+        window.open("index.html", "_self");
+    }
+
+    function cart_1(x) {
+        window.open("Cart.html", "_self");
+    }
+
+function change (pic, updatePic) {
+    if (updatePic == 'img1') {
+        pic.src = "images/product1_1.jpeg"
+    }
+    if (updatePic == 'img2'){
+        pic.src = "images/product1_2.jpeg"
+    }
+    if (updatePic == 'img3') {
+        pic.src = "images/product1_3.jpeg"
+    }
+    if (updatePic == 'img4') {
+        pic.src = "images/product1_4.jpeg"
+    }
+    
+    
+}
+
+    function myPointer(x) {
+    x.classList.toggle("change");
+    }
+
+    var Menu_popup = document.getElementById("Menu_popup");
+
+    Menu_popup.style.maxHeight = "0px";
+
+    function toggle_a() {
+        if(Menu_popup.style.maxHeight == "0px") {
+            Menu_popup.style.maxHeight = "300px";
+        }
+        else {
+            Menu_popup.style.maxHeight = "0px";
+        }
+    }
+
+</script>
+</body>
+</html>
