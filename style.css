@@ -232,8 +232,6 @@ p {
     margin: auto;
 }
 
-/* fix this problem, the resizing is still a bit broken */
-
 .column-5 .article-img {
     max-width: 100%;
     height: auto;
@@ -374,7 +372,8 @@ p {
 
 .footer .f-column-8-4 h3 {
     position: relative;
-    bottom: 38px;}
+    bottom: 38px;
+}
 
 .footer .f-column-8-4 ul {
     position: relative;
@@ -536,6 +535,30 @@ p {
 
 /* Products Page */
 
+.search-cont {
+    padding-left: 25px;
+    float: right;
+    position: relative;
+    bottom: 1px;
+}
+
+.row-1 input[type=text] {
+    border: 1px solid #000;
+    font-size: 23px;
+}
+
+.row .row-1 button {
+    float: right;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.row-1 button i{
+    font-size: 25.5px;
+}
+
 .row-2 {
     justify-content: space-between;
     margin: 100px auto 50px;
@@ -687,65 +710,3 @@ td:last-child {
 th:last-child {
     text-align: right;
 }
-
-
-/* STYLING FOR LOGIN PAGE THAT I SCRAPPED CAN USE AS REFERENCE */
-
-/*
-
-body{
-    background: #fff;
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-}
-
-input, button {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-}
-
-
-.login-div, .successfulLogin-div {
-    width: 20%;
-    margin: 0px auto;
-    margin-top: 150px;
-    padding: 20px;
-}
-
-.login-div input, successfulLogin-div input {
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background: #fff;
-    padding: 15px;
-    outline: none;
-    width: 91.5%;
-    margin-bottom: 20px;
-
-}
-
-.login-div input:focus {
-    border: 1px solid #777;
-}
-
-.login-div button, .successfulLogin-div button {
-    background: #5d8ffc;
-    color: #fff;
-    border: 1px solid #5d8ffc;
-    border-radius: 5px;
-    padding: 15px;
-    display: block;
-    width: 100%;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-}
-
-.login-div button:hover, .successfulLogin-div button:hover {
-    background: #fff;
-    color: #5d8ffc;
-    border: 1px solid #5d8ffc;
-}
-*/ 
