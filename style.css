@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Raleway', sans-serif;
+body { 
+    font-family: 'Raleway', sans-serif;  
 }
 
 .navigation {
@@ -19,15 +19,15 @@ nav {
     text-align: right;
 }
 
-    nav ul {
-        display: inline-block;
-        list-style-type: none;
-    }
+nav ul {
+    display: inline-block;
+    list-style-type: none; 
+}
 
-    nav li {
-        display: inline-block;
-        margin-right: 20px;
-    }
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
 
 .navigation img {
     cursor: pointer;
@@ -49,19 +49,19 @@ nav {
 }
 
 .change .bar-1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
 }
 
 /* Fade out the second bar */
 .change .bar-2 {
-    opacity: 0;
+  opacity: 0;
 }
 
 /* Rotate last bar */
 .change .bar-3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 
 a {
@@ -93,16 +93,16 @@ p {
     min-width: 300px;
 }
 
-    .column-1 img {
-        max-width: 100%;
-        padding: 50px 0px;
-    }
+.column-1 img {
+    max-width: 100%;
+    padding: 50px 0px;
+}
 
-    .column-1 h1 {
-        font-size: 45px;
-        line-height: 60px;
-        margin: 25px 0px;
-    }
+.column-1 h1 {
+    font-size: 45px;
+    line-height: 60px;
+    margin: 25px 0px;
+}
 
 .displaybutton {
     display: inline-block;
@@ -117,18 +117,18 @@ p {
     -moz-transition: 0.3s;
 }
 
-    .displaybutton:hover {
-        background: #fff;
-        color: #000;
-    }
+.displaybutton:hover {
+    background: #fff;
+    color: #000;
+}
 
 .header {
     background: radial-gradient(#fff,#8ef38e);
 }
 
-    .header .row {
-        margin-top: 70px;
-    }
+.header .row {
+    margin-top: 70px;
+}
 
 /* Categories */
 
@@ -142,10 +142,10 @@ p {
     margin-bottom: 30px;
 }
 
-    .column-3 img {
-        width: 100%;
-        height: auto;
-    }
+.column-3 img {
+    width: 100%;
+    height: auto;
+}
 
 .categories-cont {
     max-width: 1080px;
@@ -162,38 +162,39 @@ p {
     transition: transform 0.3s;
 }
 
-    .column-4 img {
-        width: 100%;
-        cursor: pointer;
-    }
+.column-4 img {
+    width: 100%;
+    cursor: pointer; 
+}
 
-    .column-4 p {
-        font-size: 14px;
-    }
+.column-4 p{
+    font-size: 14px;
+}
 
-    .column-4:hover {
-        transform: translateY(-5px);
-    }
+.column-4:hover {
+    transform: translateY(-5px);
+
+}
 
 .title {
     text-align: center;
-    margin: 0 auto 80px;
+    margin: 0 auto 80px; 
     position: relative;
     line-height: 60px;
     color: #000;
 }
 
-    .title::after {
-        content: '';
-        background: #000;
-        width: 1000px;
-        height: 5px;
-        border-radius: 5px;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+.title::after {
+    content:'';
+    background: #000;
+    width: 1000px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 /* Products */
 
@@ -231,23 +232,21 @@ p {
     margin: auto;
 }
 
-    /* fix this problem, the resizing is still a bit broken */
-
-    .column-5 .article-img {
-        max-width: 100%;
-        height: auto;
-        padding: 0px 0px
-    }
+.column-5 .article-img {
+    max-width: 100%;
+    height: auto;
+    padding: 0px 0px
+}
 
 
-    .column-5 h1 {
-        font-size: 45px;
-        line-height: 60px;
-        margin: 25px 0px;
-        text-align: center;
-        position: relative;
-        top: 10px;
-    }
+.column-5 h1 {
+    font-size: 45px;
+    line-height: 60px;
+    margin: 25px 0px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
 
 .column-6 {
     flex-basis: 50%;
@@ -256,13 +255,13 @@ p {
     position: relative;
 }
 
-    .column-6 .column-6-img {
-        margin-right: 10px;
-    }
+.column-6 .column-6-img {
+    margin-right: 10px;
+}
 
-    .column-6 p {
-        font-size: 12px;
-    }
+.column-6 p {
+    font-size: 12px;
+}
 
 .column-6-btn {
     display: inline-block;
@@ -274,43 +273,43 @@ p {
     border-radius: 30px;
     transition: 0.3s;
     -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
+    -moz-transition: 0.3s;  
 }
 
-    .column-6-btn:hover {
-        background: #fff;
-        color: #000;
-    }
+.column-6-btn:hover {
+    background: #fff;
+    color: #000;
+}
 
 .brand-names {
     margin: 200px auto;
 }
 
-    /* Brand-names above Footer */
+/* Brand-names above Footer */
 
-    .brand-names .brand-names-cont {
-        max-width: 1080px;
-        margin: auto;
-        padding-left: 25px;
-        padding-right: 25px;
-    }
+.brand-names .brand-names-cont {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
 
 .column-7 {
     width: 160px;
 }
 
-    .column-7 img {
-        width: 100%;
-        cursor: pointer;
-        filter: grayscale(100%);
-    }
+.column-7 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
 
-        .column-7 img:hover {
-            filter: grayscale(0);
-            transition: 0.3s;
-            -webkit-transition: 0.3s;
-            -moz-transition: 0.3s;
-        }
+.column-7 img:hover {
+    filter: grayscale(0);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s; 
+}
 
 /* Footer */
 
@@ -321,65 +320,78 @@ p {
     padding: 60px 0 20px;
 }
 
-    .footer .footer-cont {
-        max-width: 1800px;
-        margin: auto;
-        padding-left: 25px;
-        padding-right: 25px
-    }
+.footer .footer-cont { 
+    max-width: 1800px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px
+}
 
-    .footer p {
-        color: #808080;
-    }
+.footer p{
+    color: #808080;
+}
 
-    .footer h3 {
-        color: #fff;
-        margin-bottom: 20px;
-    }
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
 
-    .footer .f-column-8-1, .f-column-8-2, .f-column-8-3, .f-column-8-4 {
-        min-height: 200px;
-        vertical-align: top;
-    }
+.footer .f-column-8-1 h3 {
+    text-align: left;
+    position: relative;
+    bottom: 28px;
+}
 
-        .footer .f-column-8-1, .f-column-8-2, .f-column-8-3, .f-column-8-4 p {
-            position: relative;
-            bottom: 28px;
-        }
+.footer .f-column-8-1 p {
+    position: relative;
+    bottom: 28px;
+}
 
-        .footer .f-column-8-1, .f-column-8-2, .f-column-8-3, .f-column-8-4 h3 {
-            text-align: left;
-            vertical-align: top;
-            position: relative;
-            bottom: 28px;
-        }
+.footer .f-column-8-2 p {
+    position: relative;
+    top: 25px;
+}
 
-    .footer .f-column-8-3 ul {
-        text-align: center;
-        list-style-type: none;
-        position: relative;
-        bottom: 15px;
-        line-height: 25px;
-    }
+.footer .f-column-8-2 img {
+    margin-right: 10px;
+}
 
+.footer .f-column-8-3 h3 {
+    text-align: center;
+    position: relative;
+    bottom: 15px;
+}
 
-    .footer .f-column-8-4 ul {
-        position: relative;
-        bottom: 28px;
-        text-align: center;
-        list-style-type: none;
-        line-height: 25px;
-    }
+.footer .f-column-8-3 ul {
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    bottom: 15px;
+    line-height: 25px;
+}
 
-    .footer hr {
-        border: none;
-        background: #808080;
-        height: 1px;
-        margin: 20px 0px;
-    }
+.footer .f-column-8-4 h3 {
+    position: relative;
+    bottom: 38px;
+}
+
+.footer .f-column-8-4 ul {
+    position: relative;
+    bottom: 38px;
+    text-align: center;
+    list-style-type: none;
+    line-height: 25px;
+}
+
+.footer hr {
+    border: none;
+    background: #808080;
+    height: 1px;
+    margin: 20px 0px;
+}
 
 .footer {
-    text-align: center;
+    text-align: center; 
 }
 
 .footer-copyright {
@@ -400,17 +412,17 @@ p {
         overflow: hidden;
         transition: max-height 0.8s;
     }
+    
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 
-        nav ul li {
-            display: block;
-            margin-right: 50px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-
-            nav ul li a {
-                color: #fff;
-            }
+    nav ul li a {
+        color: #fff;
+    }
 
     .bar-1, .bar-2, .bar-3 {
         display: block;
@@ -418,12 +430,12 @@ p {
 }
 
 @media only screen and (max-width: 600px) {
-
+    
     .row {
         text-align: center;
     }
 
-    .column-2, .column-3, .column-4, .column-5, .column-6, f-column-8-1, f-column-8-2, f-column-8-3, f-column-8-4 {
+    .column-2, .column-3, .column-4, .column-5, .column-6 {
         flex-basis: 100%;
     }
 
@@ -461,23 +473,18 @@ p {
     0% {
         background: #fff44f;
     }
-
     20% {
         background: #ffff66;
     }
-
     40% {
         background: #fcf75e;
     }
-
     60% {
         background: #fada5e;
     }
-
     80% {
         background: #fefe33;
     }
-
     100% {
         background: #fbec5d;
     }
@@ -518,15 +525,39 @@ p {
     margin: auto;
 }
 
-    .clock-cont #clock {
-        width: auto;
-        position: relative;
-        bottom: 180px;
-        text-align: center;
-        font-size: 15px;
-    }
+.clock-cont #clock {
+    width: auto;
+    position: relative;
+    bottom: 180px;
+    text-align: center;
+    font-size: 15px;
+}
 
 /* Products Page */
+
+.search-cont {
+    padding-left: 25px;
+    float: right;
+    position: relative;
+    bottom: 1px;
+}
+
+.row-1 input[type=text] {
+    border: 1px solid #000;
+    font-size: 23px;
+}
+
+.row .row-1 button {
+    float: right;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.row-1 button i{
+    font-size: 25.5px;
+}
 
 .row-2 {
     justify-content: space-between;
@@ -542,21 +573,21 @@ select {
     margin: 0 auto 80px;
 }
 
-    .product-page-btn span {
-        display: inline-block;
-        border: 1px solid #000;
-        margin-left: 10px;
-        width: 40px;
-        height: 40px;
-        text-align: center;
-        line-height: 35px;
-        cursor: pointer;
-    }
+.product-page-btn span {
+    display: inline-block;
+    border: 1px solid #000;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+}
 
-        .product-page-btn span:hover {
-            background: #000;
-            color: #fff;
-        }
+.product-page-btn span:hover {
+    background: #000;
+    color: #fff;
+}
 
 /* Product Detail for Adidas Shirt */
 
@@ -566,38 +597,38 @@ select {
     margin: auto;
 }
 
-    .product-detail-cont .column-2 {
-        padding: 20px;
-    }
+.product-detail-cont .column-2 {
+    padding: 20px;
+}
 
-        .product-detail-cont .column-2 img {
-            padding: 0;
-        }
+.product-detail-cont .column-2 img {
+    padding: 0;
+}
 
-    .product-detail-cont h4 {
-        margin: 20px 0;
-        font-size: 22px;
-        font-weight: bold;
-    }
+.product-detail-cont h4 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
 
-    .product-detail-cont select {
-        display: block;
-        padding: 10px;
-        margin-top: 20px;
-    }
+.product-detail-cont select {
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
 
-    .product-detail-cont input {
-        width: 50px;
-        height: 40px;
-        padding-left: 10px;
-        font-size: 20px;
-        margin-right: 10px;
-        border: 1px solid #000;
-    }
+.product-detail-cont input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
 
-    .product-detail-cont .fa {
-        margin-left: 10px;
-    }
+.product-detail-cont .fa {
+    margin-left: 10px;
+}
 
 .img-row {
     display: flex;
@@ -623,22 +654,22 @@ td {
     padding: 10px 5px;
 }
 
-    td input {
-        width: 40px;
-        height: 30px;
-        padding: 5px;
-    }
+td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
 
-    td a {
-        color: #000;
-        font-size: 12px;
-    }
+td a {
+    color: #000;
+    font-size: 12px;
+}
 
-    td img {
-        width: 150px;
-        height: 150px;
-        margin-right: 10px;
-    }
+td img {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px; 
+}
 
 .cart-cont {
     max-width: 1080px;
@@ -648,12 +679,12 @@ td {
 }
 
 .cart-view {
-    margin: 150px auto;
+    margin: 150px auto; 
 }
 
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; 
 }
 
 .cart-details {
@@ -666,11 +697,11 @@ table {
     justify-content: flex-end;
 }
 
-    .total table {
-        border-top: 3px solid #000;
-        width: 100%;
-        max-width: 500px;
-    }
+.total table {
+    border-top: 3px solid #000;
+    width: 100%;
+    max-width: 500px;
+}
 
 td:last-child {
     text-align: right;
@@ -679,65 +710,3 @@ td:last-child {
 th:last-child {
     text-align: right;
 }
-
-
-/* STYLING FOR LOGIN PAGE THAT I SCRAPPED CAN USE AS REFERENCE */
-
-/*
-
-body{
-    background: #fff;
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-}
-
-input, button {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-}
-
-
-.login-div, .successfulLogin-div {
-    width: 20%;
-    margin: 0px auto;
-    margin-top: 150px;
-    padding: 20px;
-}
-
-.login-div input, successfulLogin-div input {
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background: #fff;
-    padding: 15px;
-    outline: none;
-    width: 91.5%;
-    margin-bottom: 20px;
-
-}
-
-.login-div input:focus {
-    border: 1px solid #777;
-}
-
-.login-div button, .successfulLogin-div button {
-    background: #5d8ffc;
-    color: #fff;
-    border: 1px solid #5d8ffc;
-    border-radius: 5px;
-    padding: 15px;
-    display: block;
-    width: 100%;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-}
-
-.login-div button:hover, .successfulLogin-div button:hover {
-    background: #fff;
-    color: #5d8ffc;
-    border: 1px solid #5d8ffc;
-}
-*/
